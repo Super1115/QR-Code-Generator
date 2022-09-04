@@ -1,0 +1,46 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+/* font */
+body{
+    background-color: rgb(243, 228, 142);
+}
+#url{
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid rgb(100, 100, 100);
+    font-family: 'Ubuntu', sans-serif;
+    width: 50vw;
+    height: 6vh;
+    font-size: 3vh;
+    background-color: transparent;
+    margin-bottom: 5vh;
+    
+}
+#submit{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Ubuntu', sans-serif;
+    height: 8vh;
+    width: 40vh;
+    margin-top: 10vh;
+    background-color: transparent;
+    border: 3px solid rgb(100, 100, 100);
+    cursor: pointer;
+    font-size: 6vh;
+    color: rgba(32, 32, 32, 0.658);
+}
+.form{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form img{
+    margin-top: 10vh;
+    position: relative;
+}

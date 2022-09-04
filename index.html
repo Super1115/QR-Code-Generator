@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code-generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form" id="form">
+        <div>
+            <input type="text" id="url" placeholder="URL">
+            <button id="submit">GO!</button>
+        </div>
+        <img src="" alt="">
+    </div>
+    <script>
+        function qrCode(){
+            const url = document.querySelector("#url").value
+            let link = `https://chart.googleapis.com/chart?cht=qr&chl=${url}&chs=320x320`
+            // location.href = link
+            let qrImage = document.querySelector("img")
+            qrImage.src = link
+            }
+        document.querySelector("#submit").addEventListener("click",qrCode)
+    </script>
+</body>
+</html>
